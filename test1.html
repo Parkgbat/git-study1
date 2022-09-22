@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html,body {
+            margin: 0;
+            height: 100%;
+        }
+        #warp {
+            display: flex;
+
+            height: 100%;
+
+        }
+        .baner {
+            display: flex;
+            flex-direction: column; 
+             align-items: center; 
+
+            width: 100px;
+
+
+            background-color: aqua;
+        }
+        .content {
+            width: 100%;
+            
+
+            background-color: aquamarine;
+
+        }
+        .header{
+
+            background-color: brown;
+        }
+        .header-img {
+            height: 300px; 
+
+        }
+        .header-line {
+            display: flex;
+            justify-content: space-around;
+            height: 50px;
+
+            background-color: black;
+        }
+
+        i {
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+        button {
+            width: 100px;
+            height: 100%;
+            color: white;
+            border: 0;
+            background-color: rgba(0, 0, 0, 0);
+
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="warp">
+        <div class="baner">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-house-user"></i>
+        </div>
+        <div class="content">
+            <div class="header">
+                <div class="header-img"></div>
+                <div class="header-line">
+                    <button type="button">메뉴1</button>
+                    <button type="button">메뉴2</button>
+                    <button type="button">메뉴3</button>
+                    <button type="button">메뉴4</button>
+                    <button type="button">메뉴5</button>
+                    <button type="button">메뉴6</button>
+                    <button type="button">메뉴7</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html,body{
+            margin: 0;
+            height: 100%;
+        }
+        #warp {
+            height: 1030px;
+            width: 1440px;
+            display: flex;
+
+        }
+        .baner {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            width: 60px;
+
+            background-color: rgb(175, 179, 179);
+        }
+        .baner-button {
+            border: 0;
+            background-color: rgba(0, 0, 0, 0);
+            margin-bottom: 40px;
+
+            cursor: pointer;
+
+        }
+        i {
+            font-size: 40px;
+        }
+        .header {
+            width: 100%;
+        }
+        img {
+            width: 100%
+
+        }
+        .header-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 393px;
+            
+
+            overflow: hidden;
+
+        }
+        .header-line {
+            
+            display: flex;
+            justify-content:space-around ;
+            width: 100%;
+            height: 50px;
+            border-bottom: 3px solid rgb(175, 179, 179) ;
+
+        }
+        .line-button{
+            font-size: 24px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 0;
+
+            cursor: pointer;
+            background-color: white
+
+
+        }
+        .maincontent{
+            height: 677px;
+        }
+
+        table {
+            margin: auto;
+            height: 600px;
+            width:700px;
+            border-collapse: collapse;
+        }
+        tr,td {
+            
+            text-align: right;
+            font-size: 24px;  
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        thead {
+            text-align: center;
+            height: 100px;
+        }
+        th {
+            font-size: 32px;
+        }
+        input[type="text"] {
+            font-size: 24px;
+            box-sizing: border-box; 
+            width: 100%;
+            outline: none;
+            text-align: center;
+
+            border-radius: 10px;
+        }
+        
+        td {
+            vertical-align: top;
+        }
+
+        input[type="email-com"]{
+            font-size: 24px;
+            width: 100%;
+            outline: none;
+            text-align: center;
+
+            border-radius: 10px;
+        }
+        input[type="email"]{
+            font-size: 24px;
+            width: 188px;
+
+            border-radius: 10px;
+        }
+        input[type="text2"] {
+            width: 100%;
+            height: 100%;
+
+            border-radius: 10px;
+        }
+        
+        tfoot tr td {
+            vertical-align: bottom;
+            align-items: center;
+        }
+        
+        button[type="button1"] {
+            width: 150px;
+            height: 50px;
+            font-size: 24px;
+            border: 0;
+            
+            border-radius: 10px;
+            background-color: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="warp">
+        <div class="baner">
+            <button class="baner-button"><i class="fa-solid fa-house"></i></button>
+            <button class="baner-button"><i class="fa-solid fa-mug-hot"></i></button>
+            <button class="baner-button"><i class="fa-sharp fa-solid fa-image"></i></button>
+            <button class="baner-button"><i class="fa-solid fa-computer"></i></button>
+            <button class="baner-button"><i class="fa-solid fa-headphones"></i></button>
+        </div>
+        <div class="header">
+            <div class="header-img">
+                <img src="img/Cat2.png ">
+            </div>
+            <div class="header-line">
+                <button class="line-button">COFFEE</button>
+                <button class="line-button">HOME</button>
+                <button class="line-button">CF</button>
+                <button class="line-button">PRINT</button>
+                <button class="line-button">문의하기</button>
+            </div>
+            <div class="maincontent">
+                <form action="#">
+                    
+                </form>
+                <table>
+                    <thead>
+                        <th colspan="2">제품문의하기</th>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td >제목</td>
+                            <td colspan="2"><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td >작성자</td>
+                            <td colspan="2"><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>이메일</td>
+                            <td><input type="email"> @</td>
+                            <td><input type="email-com"></td>
+    
+                        </tr>
+                        <tr>
+                            <td>문의내용</td>
+                            <td colspan="2"><input type="text2"></td>
+                        </tr>
+                        <tr >
+                            <td ><button type="button1">초기화</button></td>
+                            <td colspan="2"><button type="button1">문의하기</button></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
